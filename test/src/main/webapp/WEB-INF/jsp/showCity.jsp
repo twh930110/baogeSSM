@@ -34,7 +34,7 @@ function test(){
 		dataType: "json",
 		contentType: "application/x-www-form-urlencoded; charset=UTF-8",
 		success : function(resp) {
-      		$("#result").html(resp.data[0].province+" "+resp.city+" "+resp.data[0].info)
+      		$("#result").html(resp.city+": 天气 : "+resp.weather+" 风力: "+resp.wdforce+" 风向: "+resp.wd)
   		},
 		error: function (jqXHR, textStatus, errorThrown) {
 	
