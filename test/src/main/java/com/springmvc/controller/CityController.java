@@ -60,7 +60,7 @@ public class CityController {
 		// 天气API 网址
 		String weatherurl = null;
 		try {
-			weatherurl = "http://api.help.bj.cn/apis/alarm/?id="
+			weatherurl = "http://api.help.bj.cn/apis/weather2d/?id="
 					+ URLEncoder.encode(city, "utf-8");
 		} catch (Exception e1) {
 			e1.printStackTrace();
